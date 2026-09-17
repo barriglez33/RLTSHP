@@ -528,9 +528,9 @@
     }
   ],
   "settings": {
-    "max_age_hours": 72,
-    "gdelt_results_per_keyword": 12,
-    "google_results_per_edition": 4,
+    "max_age_hours": 96,
+    "gdelt_results_per_keyword": 20,
+    "google_results_per_edition": 8,
     "max_stored_articles": 5000,
     "max_feed_items": 400,
     "minimum_body_characters": 250
@@ -588,7 +588,10 @@
   "translation": {
     "enabled": true,
     "target_language": "es",
-    "chunk_size": 4000
+    "chunk_size": 2200,
+    "max_retries": 3,
+    "retry_delay_seconds": 2.0,
+    "use_mymemory_fallback": true
   },
   "deduplication": {
     "enabled": true,
@@ -624,5 +627,92 @@
     "title": "Relationship News RSS",
     "description": "Noticias y contenido sobre relaciones, romance, dating, psicología, matrimonio, rupturas, astrología y columnas de consejos.",
     "site_url": "http://localhost:8000/"
+  },
+  "category_search_rules": {
+    "Horoscopes & Astrology": {
+      "extra_terms": [
+        "love horoscope",
+        "relationship horoscope",
+        "dating horoscope",
+        "zodiac love",
+        "zodiac compatibility",
+        "romantic compatibility",
+        "astrology love",
+        "dating astrology",
+        "love tarot",
+        "romance tarot",
+        "love zodiac"
+      ],
+      "require_relationship_context": false,
+      "relaxed_keyword_match": true
+    },
+    "Dating & Romance": {
+      "extra_terms": [
+        "dating",
+        "romance",
+        "relationships",
+        "love"
+      ],
+      "require_relationship_context": true
+    },
+    "Relationship Advice": {
+      "extra_terms": [
+        "relationship advice",
+        "couples",
+        "dating advice",
+        "love"
+      ],
+      "require_relationship_context": true
+    },
+    "Red Flags & Warning Signs": {
+      "extra_terms": [
+        "relationship",
+        "dating",
+        "partner",
+        "couple",
+        "love"
+      ],
+      "require_relationship_context": true
+    },
+    "Attachment & Psychology": {
+      "extra_terms": [
+        "relationship psychology",
+        "dating",
+        "partner",
+        "couple",
+        "attachment"
+      ],
+      "require_relationship_context": true
+    },
+    "Commitment & Marriage": {
+      "extra_terms": [
+        "marriage",
+        "couple",
+        "relationship",
+        "wedding",
+        "spouse"
+      ],
+      "require_relationship_context": true
+    },
+    "Heartbreak & Milestones": {
+      "extra_terms": [
+        "breakup",
+        "divorce",
+        "relationship",
+        "dating",
+        "heartbreak"
+      ],
+      "require_relationship_context": true
+    },
+    "Columns & Editorial Format": {
+      "extra_terms": [
+        "relationship",
+        "dating",
+        "love",
+        "romance",
+        "advice"
+      ],
+      "require_relationship_context": true
+    }
   }
 }
