@@ -1,0 +1,628 @@
+{
+  "project_name": "Relationship News RSS",
+  "keywords": [
+    {
+      "id": 1,
+      "category": "Dating & Romance",
+      "keyword": "Modern romance"
+    },
+    {
+      "id": 2,
+      "category": "Dating & Romance",
+      "keyword": "Dating culture"
+    },
+    {
+      "id": 3,
+      "category": "Dating & Romance",
+      "keyword": "Online dating trends"
+    },
+    {
+      "id": 4,
+      "category": "Dating & Romance",
+      "keyword": "Matchmaking news"
+    },
+    {
+      "id": 5,
+      "category": "Dating & Romance",
+      "keyword": "Dating apps"
+    },
+    {
+      "id": 6,
+      "category": "Dating & Romance",
+      "keyword": "First date tips"
+    },
+    {
+      "id": 7,
+      "category": "Dating & Romance",
+      "keyword": "Speed dating"
+    },
+    {
+      "id": 8,
+      "category": "Dating & Romance",
+      "keyword": "Blind date"
+    },
+    {
+      "id": 9,
+      "category": "Dating & Romance",
+      "keyword": "Meet cute"
+    },
+    {
+      "id": 10,
+      "category": "Dating & Romance",
+      "keyword": "Hookup culture"
+    },
+    {
+      "id": 11,
+      "category": "Dating & Romance",
+      "keyword": "Courtship"
+    },
+    {
+      "id": 12,
+      "category": "Dating & Romance",
+      "keyword": "Long-distance romance"
+    },
+    {
+      "id": 13,
+      "category": "Dating & Romance",
+      "keyword": "Casual dating"
+    },
+    {
+      "id": 14,
+      "category": "Dating & Romance",
+      "keyword": "Exclusive relationship"
+    },
+    {
+      "id": 15,
+      "category": "Dating & Romance",
+      "keyword": "Dating etiquette"
+    },
+    {
+      "id": 16,
+      "category": "Relationship Advice",
+      "keyword": "Relationship advice"
+    },
+    {
+      "id": 17,
+      "category": "Relationship Advice",
+      "keyword": "Couples counseling"
+    },
+    {
+      "id": 18,
+      "category": "Relationship Advice",
+      "keyword": "Intimacy building"
+    },
+    {
+      "id": 19,
+      "category": "Relationship Advice",
+      "keyword": "Healthy partnership"
+    },
+    {
+      "id": 20,
+      "category": "Relationship Advice",
+      "keyword": "Communication tips"
+    },
+    {
+      "id": 21,
+      "category": "Relationship Advice",
+      "keyword": "Love languages"
+    },
+    {
+      "id": 22,
+      "category": "Relationship Advice",
+      "keyword": "Mutual trust"
+    },
+    {
+      "id": 23,
+      "category": "Relationship Advice",
+      "keyword": "Relationship goals"
+    },
+    {
+      "id": 24,
+      "category": "Relationship Advice",
+      "keyword": "Emotional vulnerability"
+    },
+    {
+      "id": 25,
+      "category": "Relationship Advice",
+      "keyword": "Conflict resolution"
+    },
+    {
+      "id": 26,
+      "category": "Relationship Advice",
+      "keyword": "Active listening"
+    },
+    {
+      "id": 27,
+      "category": "Relationship Advice",
+      "keyword": "Forgiveness in love"
+    },
+    {
+      "id": 28,
+      "category": "Relationship Advice",
+      "keyword": "Quality time"
+    },
+    {
+      "id": 29,
+      "category": "Relationship Advice",
+      "keyword": "Deep connection"
+    },
+    {
+      "id": 30,
+      "category": "Relationship Advice",
+      "keyword": "Validation strategies"
+    },
+    {
+      "id": 31,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Relationship red flags"
+    },
+    {
+      "id": 32,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Toxic relationships"
+    },
+    {
+      "id": 33,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Gaslighting signs"
+    },
+    {
+      "id": 34,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Love bombing"
+    },
+    {
+      "id": 35,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Narcissistic partner"
+    },
+    {
+      "id": 36,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Emotional manipulation"
+    },
+    {
+      "id": 37,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Controlling behavior"
+    },
+    {
+      "id": 38,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Relationship boundaries"
+    },
+    {
+      "id": 39,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Codependency"
+    },
+    {
+      "id": 40,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Jealousy triggers"
+    },
+    {
+      "id": 41,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Guilt tripping"
+    },
+    {
+      "id": 42,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Micro-cheating"
+    },
+    {
+      "id": 43,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Silent treatment"
+    },
+    {
+      "id": 44,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Stonewalling"
+    },
+    {
+      "id": 45,
+      "category": "Red Flags & Warning Signs",
+      "keyword": "Dishonesty"
+    },
+    {
+      "id": 46,
+      "category": "Attachment & Psychology",
+      "keyword": "Attachment styles"
+    },
+    {
+      "id": 47,
+      "category": "Attachment & Psychology",
+      "keyword": "Secure attachment"
+    },
+    {
+      "id": 48,
+      "category": "Attachment & Psychology",
+      "keyword": "Anxious attachment"
+    },
+    {
+      "id": 49,
+      "category": "Attachment & Psychology",
+      "keyword": "Avoidant attachment"
+    },
+    {
+      "id": 50,
+      "category": "Attachment & Psychology",
+      "keyword": "Disorganized attachment"
+    },
+    {
+      "id": 51,
+      "category": "Attachment & Psychology",
+      "keyword": "Emotional availability"
+    },
+    {
+      "id": 52,
+      "category": "Attachment & Psychology",
+      "keyword": "Relationship psychology"
+    },
+    {
+      "id": 53,
+      "category": "Attachment & Psychology",
+      "keyword": "Gottman method"
+    },
+    {
+      "id": 54,
+      "category": "Attachment & Psychology",
+      "keyword": "Fear of intimacy"
+    },
+    {
+      "id": 55,
+      "category": "Attachment & Psychology",
+      "keyword": "Relationship anxiety"
+    },
+    {
+      "id": 56,
+      "category": "Attachment & Psychology",
+      "keyword": "People-pleasing"
+    },
+    {
+      "id": 57,
+      "category": "Attachment & Psychology",
+      "keyword": "Trauma bonding"
+    },
+    {
+      "id": 58,
+      "category": "Attachment & Psychology",
+      "keyword": "Emotional maturity"
+    },
+    {
+      "id": 59,
+      "category": "Attachment & Psychology",
+      "keyword": "Reassurance seeking"
+    },
+    {
+      "id": 60,
+      "category": "Attachment & Psychology",
+      "keyword": "Relationship triggers"
+    },
+    {
+      "id": 61,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Relationship horoscopes"
+    },
+    {
+      "id": 62,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Love astrology"
+    },
+    {
+      "id": 63,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Zodiac compatibility"
+    },
+    {
+      "id": 64,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Romantic forecasting"
+    },
+    {
+      "id": 65,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Birth chart love"
+    },
+    {
+      "id": 66,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Synastry chart"
+    },
+    {
+      "id": 67,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Venus sign meaning"
+    },
+    {
+      "id": 68,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Mars sign passion"
+    },
+    {
+      "id": 69,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Moon sign intimacy"
+    },
+    {
+      "id": 70,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Astrology matches"
+    },
+    {
+      "id": 71,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Cosmic dating"
+    },
+    {
+      "id": 72,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Retrograde relationships"
+    },
+    {
+      "id": 73,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Star sign attraction"
+    },
+    {
+      "id": 74,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Elemental compatibility"
+    },
+    {
+      "id": 75,
+      "category": "Horoscopes & Astrology",
+      "keyword": "Love tarot"
+    },
+    {
+      "id": 76,
+      "category": "Commitment & Marriage",
+      "keyword": "Marriage culture"
+    },
+    {
+      "id": 77,
+      "category": "Commitment & Marriage",
+      "keyword": "Wedding trends"
+    },
+    {
+      "id": 78,
+      "category": "Commitment & Marriage",
+      "keyword": "Long-term partnerships"
+    },
+    {
+      "id": 79,
+      "category": "Commitment & Marriage",
+      "keyword": "Premarital counseling"
+    },
+    {
+      "id": 80,
+      "category": "Commitment & Marriage",
+      "keyword": "Domestic partnership"
+    },
+    {
+      "id": 81,
+      "category": "Commitment & Marriage",
+      "keyword": "Newlyweds guidance"
+    },
+    {
+      "id": 82,
+      "category": "Commitment & Marriage",
+      "keyword": "Cohabitation"
+    },
+    {
+      "id": 83,
+      "category": "Commitment & Marriage",
+      "keyword": "Marital bliss"
+    },
+    {
+      "id": 84,
+      "category": "Commitment & Marriage",
+      "keyword": "Vow renewals"
+    },
+    {
+      "id": 85,
+      "category": "Commitment & Marriage",
+      "keyword": "Relationship longevity"
+    },
+    {
+      "id": 86,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Breakup advice"
+    },
+    {
+      "id": 87,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Divorce news"
+    },
+    {
+      "id": 88,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Healing from heartbreak"
+    },
+    {
+      "id": 89,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Ex-partner dynamics"
+    },
+    {
+      "id": 90,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Moving on"
+    },
+    {
+      "id": 91,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Conscious uncoupling"
+    },
+    {
+      "id": 92,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Relationship closure"
+    },
+    {
+      "id": 93,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Getting back together"
+    },
+    {
+      "id": 94,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Dating after divorce"
+    },
+    {
+      "id": 95,
+      "category": "Heartbreak & Milestones",
+      "keyword": "Coping with rejection"
+    },
+    {
+      "id": 96,
+      "category": "Columns & Editorial Format",
+      "keyword": "Relationship column"
+    },
+    {
+      "id": 97,
+      "category": "Columns & Editorial Format",
+      "keyword": "Dating blog"
+    },
+    {
+      "id": 98,
+      "category": "Columns & Editorial Format",
+      "keyword": "Love advice column"
+    },
+    {
+      "id": 99,
+      "category": "Columns & Editorial Format",
+      "keyword": "Agony aunt"
+    },
+    {
+      "id": 100,
+      "category": "Columns & Editorial Format",
+      "keyword": "Relationship essay"
+    },
+    {
+      "id": 101,
+      "category": "Columns & Editorial Format",
+      "keyword": "Dear Abby"
+    },
+    {
+      "id": 102,
+      "category": "Columns & Editorial Format",
+      "keyword": "Modern Love"
+    },
+    {
+      "id": 103,
+      "category": "Columns & Editorial Format",
+      "keyword": "Editorial Q&A"
+    },
+    {
+      "id": 104,
+      "category": "Columns & Editorial Format",
+      "keyword": "Guest column romance"
+    },
+    {
+      "id": 105,
+      "category": "Columns & Editorial Format",
+      "keyword": "Dating diaries"
+    }
+  ],
+  "settings": {
+    "max_age_hours": 72,
+    "gdelt_results_per_keyword": 12,
+    "google_results_per_edition": 4,
+    "max_stored_articles": 5000,
+    "max_feed_items": 400,
+    "minimum_body_characters": 250
+  },
+  "google_news_editions": [
+    {
+      "label": "US English",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en"
+    },
+    {
+      "label": "México Español",
+      "hl": "es-419",
+      "gl": "MX",
+      "ceid": "MX:es-419"
+    },
+    {
+      "label": "Spain Español",
+      "hl": "es",
+      "gl": "ES",
+      "ceid": "ES:es"
+    },
+    {
+      "label": "UK English",
+      "hl": "en-GB",
+      "gl": "GB",
+      "ceid": "GB:en"
+    },
+    {
+      "label": "France Français",
+      "hl": "fr",
+      "gl": "FR",
+      "ceid": "FR:fr"
+    },
+    {
+      "label": "Germany Deutsch",
+      "hl": "de",
+      "gl": "DE",
+      "ceid": "DE:de"
+    },
+    {
+      "label": "Italy Italiano",
+      "hl": "it",
+      "gl": "IT",
+      "ceid": "IT:it"
+    },
+    {
+      "label": "Brazil Português",
+      "hl": "pt-BR",
+      "gl": "BR",
+      "ceid": "BR:pt-419"
+    }
+  ],
+  "translation": {
+    "enabled": true,
+    "target_language": "es",
+    "chunk_size": 4000
+  },
+  "deduplication": {
+    "enabled": true,
+    "max_hours_apart": 72,
+    "title_similarity_threshold": 0.72,
+    "title_token_overlap_threshold": 0.58,
+    "body_lead_similarity_threshold": 0.66,
+    "body_lead_characters": 1600
+  },
+  "relationship_context_terms": [
+    "relationship",
+    "relationships",
+    "dating",
+    "romance",
+    "romantic",
+    "couple",
+    "couples",
+    "partner",
+    "marriage",
+    "married",
+    "divorce",
+    "breakup",
+    "love",
+    "intimacy",
+    "wedding",
+    "spouse",
+    "boyfriend",
+    "girlfriend",
+    "husband",
+    "wife"
+  ],
+  "feed": {
+    "title": "Relationship News RSS",
+    "description": "Noticias y contenido sobre relaciones, romance, dating, psicología, matrimonio, rupturas, astrología y columnas de consejos.",
+    "site_url": "http://localhost:8000/"
+  }
+}
