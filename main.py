@@ -1,4 +1,4 @@
-import json, re, hashlib, html, unicodedata, time
+import json, re, hashlib, html, unicodedata, time, traceback
 from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
@@ -314,8 +314,13 @@ def make_rss(arr,title,desc):
         body_html='<p>'+html.escape(body).replace('\n\n','</p><p>').replace('\n','<br>')+'</p>'
         cats=''.join(f'<category>{html.escape(x)}</category>' for x in a.get('categories',[])+a.get('matched_keywords',[]))
         creator=f'<dc:creator>{cdata(a["author"])}</dc:creator>' if a.get('author') else ''
-        item=(f'<item><title>{cdata(display_title(a))}</title><link>{html.escape(a["url"])}</link>'
-              f'<guid isPermaLink="false">{a["id"]}</guid><pubDate>{a["published_rfc2822"]}</pubDate>'
+        article_url=a.get('url','')
+        article_id=a.get('id') or hashlib.sha256(article_url.encode()).hexdigest()[:20]
+        pub_date=a.get('published_rfc2822')
+        if not pub_date:
+            pub_date=format_datetime(art_dt(a))
+        item=(f'<item><title>{cdata(display_title(a))}</title><link>{html.escape(article_url)}</link>'
+              f'<guid isPermaLink="false">{article_id}</guid><pubDate>{pub_date}</pubDate>'
               f'<source>{cdata(a.get("source",""))}</source>{creator}<description>{cdata(body[:500])}</description>'
               f'<content:encoded>{cdata(body_html)}</content:encoded>{cats}</item>')
         items.append(item)
@@ -488,4 +493,9 @@ def main():
     print('Next keyword batch:',state['next_batch'])
 
 if __name__=='__main__':
-    main()
+    try:
+        main()
+    except Exception:
+        print("\nFATAL ERROR — full traceback follows:\n")
+        traceback.print_exc()
+        raise
