@@ -566,11 +566,12 @@
   ],
   "translation": {
     "enabled": true,
-    "target_language": "es",
+    "target_language": "en",
     "chunk_size": 2200,
     "max_retries": 2,
     "retry_delay_seconds": 1.0,
-    "use_mymemory_fallback": true
+    "use_mymemory_fallback": true,
+    "target_language_label": "English"
   },
   "deduplication": {
     "enabled": true,
@@ -604,7 +605,7 @@
   ],
   "feed": {
     "title": "Relationship News RSS",
-    "description": "Noticias y contenido sobre relaciones, romance, dating, psicología, matrimonio, rupturas, astrología y columnas de consejos.",
+    "description": "Relationship, dating, romance, psychology, marriage, heartbreak, astrology and advice content translated to English and deduplicated.",
     "site_url": "http://localhost:8000/"
   },
   "category_search_rules": {
