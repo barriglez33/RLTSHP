@@ -528,12 +528,15 @@
     }
   ],
   "settings": {
-    "max_age_hours": 96,
-    "gdelt_results_per_keyword": 20,
-    "google_results_per_edition": 8,
+    "max_age_hours": 2,
+    "gdelt_results_per_keyword": 15,
+    "google_results_per_edition": 5,
     "max_stored_articles": 5000,
     "max_feed_items": 400,
-    "minimum_body_characters": 250
+    "minimum_body_characters": 250,
+    "keyword_batch_1_end": 55,
+    "google_decode_interval_seconds": 0.05,
+    "old_translation_repairs_per_run": 20
   },
   "google_news_editions": [
     {
@@ -559,38 +562,14 @@
       "hl": "en-GB",
       "gl": "GB",
       "ceid": "GB:en"
-    },
-    {
-      "label": "France Français",
-      "hl": "fr",
-      "gl": "FR",
-      "ceid": "FR:fr"
-    },
-    {
-      "label": "Germany Deutsch",
-      "hl": "de",
-      "gl": "DE",
-      "ceid": "DE:de"
-    },
-    {
-      "label": "Italy Italiano",
-      "hl": "it",
-      "gl": "IT",
-      "ceid": "IT:it"
-    },
-    {
-      "label": "Brazil Português",
-      "hl": "pt-BR",
-      "gl": "BR",
-      "ceid": "BR:pt-419"
     }
   ],
   "translation": {
     "enabled": true,
     "target_language": "es",
     "chunk_size": 2200,
-    "max_retries": 3,
-    "retry_delay_seconds": 2.0,
+    "max_retries": 2,
+    "retry_delay_seconds": 1.0,
     "use_mymemory_fallback": true
   },
   "deduplication": {
