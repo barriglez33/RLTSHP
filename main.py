@@ -179,7 +179,7 @@ def translate(text):
     text=str(text or '').strip()
     if not text:
         return text,False
-    target=CFG['translation'].get('target_language','es')
+    target=CFG['translation'].get('target_language','en')
     retries=int(CFG['translation'].get('max_retries',3))
     delay=float(CFG['translation'].get('retry_delay_seconds',2.0))
     parts=split_chunks(text,CFG['translation'].get('chunk_size',2200))
@@ -201,10 +201,10 @@ def translate(text):
         if (not result or not result.strip()) and CFG['translation'].get('use_mymemory_fallback',True):
             try:
                 detected=detect_language(chunk[:1500])
-                if detected=='es':
+                if detected=='en':
                     result=chunk
                 elif detected in language_names:
-                    result=MyMemoryTranslator(source=language_names[detected],target='spanish').translate(chunk)
+                    result=MyMemoryTranslator(source=language_names[detected],target='english').translate(chunk)
                     print(f'    MyMemory fallback used ({detected}) for chunk {idx}/{len(parts)}')
             except Exception as exc:
                 print(f'    MyMemory fallback failed for chunk {idx}/{len(parts)}: {exc}')
@@ -223,7 +223,7 @@ def ensure_translation(a):
     a['original_title']=a.get('original_title') or a.get('title','')
     a['original_body']=a.get('original_body') or a.get('body','')
 
-    if a.get('translation_status') in {'translated','already_spanish'} and a.get('rss_title') and a.get('rss_body'):
+    if a.get('translation_status') in {'translated','already_english'} and a.get('rss_title') and a.get('rss_body'):
         return
 
     try:
@@ -231,21 +231,21 @@ def ensure_translation(a):
     except Exception:
         detected=''
 
-    if detected=='es':
+    if detected=='en':
         a['rss_title']=a['original_title']
         a['rss_body']=a['original_body']
-        a['translation_status']='already_spanish'
-        a['translated_to']='es'
-        a['source_detected_language']='es'
+        a['translation_status']='already_english'
+        a['translated_to']='en'
+        a['source_detected_language']='en'
         a['translation_last_attempt']=datetime.now(timezone.utc).isoformat()
-        print('  Already Spanish:',a['original_title'][:90])
+        print('  Already English:',a['original_title'][:90])
         return
 
     print('  Translating:',a['original_title'][:90])
     a['rss_title'],ok1=translate(a['original_title'])
     a['rss_body'],ok2=translate(a['original_body'])
     a['translation_status']='translated' if ok1 and ok2 else 'partial_or_fallback'
-    a['translated_to']='es'
+    a['translated_to']='en'
     a['source_detected_language']=detected
     a['translation_last_attempt']=datetime.now(timezone.utc).isoformat()
     print('    Translation status:',a['translation_status'])
@@ -469,7 +469,7 @@ def main():
             break
         if a.get('id') in new_set:
             continue
-        if a.get('translation_status') not in {'translated','already_spanish'}:
+        if a.get('translation_status') not in {'translated','already_english'}:
             ensure_translation(a)
             repairs+=1
 
