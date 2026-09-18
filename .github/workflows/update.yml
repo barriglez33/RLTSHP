@@ -15,17 +15,19 @@ permissions:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    # Pin the runner instead of ubuntu-latest so the upcoming Ubuntu 26
+    # migration notice does not affect this workflow.
+    runs-on: ubuntu-24.04
     timeout-minutes: 55
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: "pip"
@@ -35,19 +37,60 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Verify Python dependencies
+      - name: Verify files and Python dependencies
         run: |
-          python -c "import feedparser, requests, trafilatura; print('Core imports OK')"
-          python -c "from googlenewsdecoder import gnewsdecoder; print('Google News decoder OK')"
-          python -c "from deep_translator import GoogleTranslator, MyMemoryTranslator; print('Translation imports OK')"
-          python -c "from langdetect import detect; print('Language detection OK')"
+          echo "Python version:"
+          python --version
 
-      - name: Update Relationship News — rolling 2h batch
+          echo "Checking main.py syntax..."
+          python -m py_compile main.py
+
+          echo "Checking config.json..."
+          python - <<'PY'
+          import json
+          with open("config.json", "r", encoding="utf-8") as f:
+              cfg = json.load(f)
+          print("config.json OK")
+          print("Keywords:", len(cfg.get("keywords", [])))
+          print("Rolling window:", cfg.get("settings", {}).get("max_age_hours"), "hours")
+          PY
+
+          echo "Checking imports..."
+          python - <<'PY'
+          import feedparser
+          import requests
+          import trafilatura
+          from googlenewsdecoder import gnewsdecoder
+          from deep_translator import GoogleTranslator, MyMemoryTranslator
+          from langdetect import detect
+          print("All required Python imports OK")
+          PY
+
+      - name: Run Relationship News scanner
+        id: scanner
+        continue-on-error: true
         env:
           PYTHONUNBUFFERED: "1"
-        run: python main.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python -u main.py 2>&1 | tee relationship-run.log
+
+      - name: Show scanner diagnostics
+        if: always()
+        shell: bash
+        run: |
+          echo "================================================"
+          echo "LAST 250 LINES OF RELATIONSHIP NEWS RUN"
+          echo "================================================"
+          if [ -f relationship-run.log ]; then
+            tail -n 250 relationship-run.log
+          else
+            echo "No run log was created."
+          fi
 
       - name: Commit generated RSS and data
+        if: steps.scanner.outcome == 'success'
         run: |
           git config user.name "Relationship News Bot"
           git config user.email "actions@users.noreply.github.com"
@@ -60,3 +103,9 @@ jobs:
             git commit -m "Update Relationship News"
             git push
           fi
+
+      - name: Fail job if scanner failed
+        if: steps.scanner.outcome == 'failure'
+        run: |
+          echo "The scanner failed. Read the 'Show scanner diagnostics' step above for the full traceback."
+          exit 1
