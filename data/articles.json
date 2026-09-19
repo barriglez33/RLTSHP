@@ -618,7 +618,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "de",
-    "translation_last_attempt": "2026-09-19T13:00:33.441400+00:00"
+    "translation_last_attempt": "2026-09-19T13:56:09.145196+00:00"
   },
   {
     "id": "ea0d01d8d4066e612ed3",
@@ -835,7 +835,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-19T13:00:58.095735+00:00"
+    "translation_last_attempt": "2026-09-19T13:56:33.292172+00:00"
   },
   {
     "id": "c59425840d9aa91ca50b",
@@ -992,7 +992,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-19T13:01:15.276513+00:00"
+    "translation_last_attempt": "2026-09-19T13:56:49.537950+00:00"
   },
   {
     "id": "a300c689d044cf3b25c2",
@@ -1147,7 +1147,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-19T13:01:24.324421+00:00"
+    "translation_last_attempt": "2026-09-19T13:56:58.421302+00:00"
   },
   {
     "id": "f7ff273bfbb0b490f257",
@@ -1240,7 +1240,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-09-19T13:01:37.600915+00:00",
+    "translation_last_attempt": "2026-09-19T13:57:11.239892+00:00",
     "alternate_sources": [
       {
         "source": "Journal des Femmes",
@@ -1352,7 +1352,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-09-19T13:01:50.801138+00:00"
+    "translation_last_attempt": "2026-09-19T13:57:23.865963+00:00"
   },
   {
     "id": "0151f2f853f6c3384fc6",
