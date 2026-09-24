@@ -1284,7 +1284,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-09-24T19:04:50.225840+00:00"
+    "translation_last_attempt": "2026-09-24T19:58:36.307693+00:00"
   },
   {
     "id": "fabc9d39b5cbd482a2ef",
@@ -3306,7 +3306,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "de",
-    "translation_last_attempt": "2026-09-24T19:04:59.957564+00:00"
+    "translation_last_attempt": "2026-09-24T19:58:45.650173+00:00"
   },
   {
     "id": "ea0d01d8d4066e612ed3",
@@ -3523,7 +3523,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-24T19:05:25.693247+00:00"
+    "translation_last_attempt": "2026-09-24T19:59:11.188015+00:00"
   },
   {
     "id": "c59425840d9aa91ca50b",
@@ -3680,7 +3680,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-24T19:05:42.962095+00:00"
+    "translation_last_attempt": "2026-09-24T19:59:28.895479+00:00"
   },
   {
     "id": "a300c689d044cf3b25c2",
@@ -3835,7 +3835,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-09-24T19:05:52.802565+00:00"
+    "translation_last_attempt": "2026-09-24T19:59:38.585594+00:00"
   },
   {
     "id": "f7ff273bfbb0b490f257",
@@ -3928,7 +3928,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-09-24T19:06:06.361761+00:00",
+    "translation_last_attempt": "2026-09-24T19:59:52.671529+00:00",
     "alternate_sources": [
       {
         "source": "Journal des Femmes",
@@ -4040,7 +4040,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-09-24T19:06:20.333887+00:00"
+    "translation_last_attempt": "2026-09-24T20:00:06.373962+00:00"
   },
   {
     "id": "0151f2f853f6c3384fc6",
