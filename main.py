@@ -73,43 +73,83 @@ def decode_google(u):
         pass
     return None
 
-def discover_gdelt(item):
+def discover_gdelt(item, known_urls=None):
+    known_urls=known_urls or set()
     try:
-        r = requests.get('https://api.gdeltproject.org/api/v2/doc/doc', params={
-            'query': search_query(item), 'mode':'artlist',
-            'maxrecords': CFG['settings']['gdelt_results_per_keyword'],
-            'timespan': f"{CFG['settings']['max_age_hours']}h",
-            'sort':'datedesc','format':'json'
-        }, timeout=30, headers={'User-Agent':'RelationshipNewsRSS/1.0'})
-        arr = r.json().get('articles',[])
+        r=requests.get(
+            'https://api.gdeltproject.org/api/v2/doc/doc',
+            params={
+                'query':search_query(item),
+                'mode':'artlist',
+                'maxrecords':CFG['settings'].get('gdelt_results_per_keyword',15),
+                'timespan':f"{CFG['settings']['max_age_hours']}h",
+                'sort':'datedesc',
+                'format':'json'
+            },
+            timeout=30,
+            headers={'User-Agent':'RelationshipNewsRSS/2.0'}
+        )
+        arr=r.json().get('articles',[])
     except Exception:
         return []
-    return [dict(url=clean_url(x.get('url','')), title=x.get('title',''), source=x.get('domain',''),
-                 published=parse_dt(x.get('seendate')), language=x.get('language',''), country=x.get('sourcecountry',''),
-                 via='GDELT', keyword=item['keyword'], category=item['category']) for x in arr if x.get('url')]
 
-def discover_google(item):
-    out=[]; q=search_query(item)
-    cutoff=datetime.now(timezone.utc)-timedelta(hours=float(CFG['settings'].get('max_age_hours',2)))
+    cutoff=datetime.now(timezone.utc)-timedelta(hours=float(CFG['settings']['max_age_hours']))
+    limit=int(CFG['settings'].get('max_fresh_gdelt_articles_per_search',6))
+    out=[]
+
+    for x in arr:
+        u=clean_url(x.get('url',''))
+        if not u or u in known_urls:
+            continue
+        published=parse_dt(x.get('seendate'))
+        if published<cutoff:
+            continue
+        out.append(dict(
+            url=u,
+            title=x.get('title',''),
+            source=x.get('domain',''),
+            published=published,
+            language=x.get('language',''),
+            country=x.get('sourcecountry',''),
+            via='GDELT',
+            keyword=item['keyword'],
+            category=item['category']
+        ))
+        if len(out)>=limit:
+            break
+
+    return out
+
+def discover_google(item, known_urls=None):
+    out=[]
+    known_urls=known_urls or set()
+    q=search_query(item)
+    cutoff=datetime.now(timezone.utc)-timedelta(hours=float(CFG['settings'].get('max_age_hours',3)))
+    inspect_limit=int(CFG['settings'].get('google_rss_entries_to_inspect',25))
+    fresh_limit=int(CFG['settings'].get('max_fresh_google_articles_per_search',6))
 
     for ed in CFG['google_news_editions']:
-        url = f"https://news.google.com/rss/search?q={quote_plus(q)}&hl={quote_plus(ed['hl'])}&gl={quote_plus(ed['gl'])}&ceid={quote_plus(ed['ceid'])}"
-        feed = feedparser.parse(url)
+        if len(out)>=fresh_limit:
+            break
 
-        for e in list(getattr(feed,'entries',[]))[:CFG['settings']['google_results_per_edition']]:
-            # IMPORTANT: cheap date check first.
+        url=f"https://news.google.com/rss/search?q={quote_plus(q)}&hl={quote_plus(ed['hl'])}&gl={quote_plus(ed['gl'])}&ceid={quote_plus(ed['ceid'])}"
+        feed=feedparser.parse(url)
+
+        for e in list(getattr(feed,'entries',[]))[:inspect_limit]:
+            if len(out)>=fresh_limit:
+                break
+
             published=feed_dt(e)
-            if published < cutoff:
+            if published<cutoff:
                 continue
 
-            # Only decode the expensive Google News URL when the item is fresh.
-            u = decode_google(getattr(e,'link',''))
-            if not u:
+            u=decode_google(getattr(e,'link',''))
+            if not u or u in known_urls:
                 continue
 
             src=''
             try:
-                src = e.source.get('title','') if getattr(e,'source',None) else ''
+                src=e.source.get('title','') if getattr(e,'source',None) else ''
             except Exception:
                 pass
 
@@ -124,6 +164,7 @@ def discover_google(item):
                 keyword=item['keyword'],
                 category=item['category']
             ))
+
     return out
 
 def extract(u):
@@ -391,7 +432,8 @@ def main():
         if item['category']=='Horoscopes & Astrology':
             print('  Astrology query:',search_query(item))
 
-        candidates=discover_gdelt(item)+discover_google(item)
+        known_urls=set(byurl.keys())
+        candidates=discover_gdelt(item,known_urls)+discover_google(item,known_urls)
 
         # Both discovery functions already use the rolling window, but retain
         # this second check as protection against malformed dates.
