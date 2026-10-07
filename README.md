@@ -1,15 +1,12 @@
-# Relationship News — High Recall Update
+# Relationship News — Freshness Update
 
-The 55/50 alternating batch model is preserved.
+This patch makes the feed more current while preserving the high-recall discovery model.
 
-New discovery model:
-- inspect up to 25 Google News RSS entries per keyword
-- process max 6 fresh unseen Google articles per keyword
-- request up to 15 GDELT results
-- process max 6 fresh unseen GDELT articles
-- rolling window increased to 3 hours
-- tighter 24-hour smart deduplication
+- Discovery window: **2 hours**
+- Hard publisher-date cutoff: **3 hours**, only when Trafilatura extracts a date with a real clock time
+- Google News still inspects up to **25 RSS entries** and processes at most **6 fresh unseen candidates** per search
+- Existing smart deduplication and history are preserved
+- GitHub Actions schedule: `17,47 * * * *`
+- `requirements.txt` includes the `selectolax<1.0` compatibility pin
 
-Translation target remains **English**.
-
-Replace `main.py`, `config.json`, and `README.md`.
+Date-only metadata such as `2026-10-07` is not rejected because it does not provide enough precision for a three-hour cutoff.

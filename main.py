@@ -167,6 +167,42 @@ def discover_google(item, known_urls=None):
 
     return out
 
+def parse_extracted_article_date(value):
+    """Parse only article dates that contain a usable time component."""
+    if not value:
+        return None
+    raw=str(value).strip()
+
+    # A date such as 2026-10-07 has no clock time, so it cannot safely be
+    # used for a 3-hour freshness cutoff. Let it pass instead of guessing.
+    if "T" not in raw and ":" not in raw:
+        return None
+
+    for candidate in (raw,raw.replace("Z","+00:00")):
+        try:
+            d=datetime.fromisoformat(candidate)
+            if d.tzinfo is None:
+                d=d.replace(tzinfo=timezone.utc)
+            return d.astimezone(timezone.utc)
+        except Exception:
+            pass
+
+    for fmt in ("%Y-%m-%d %H:%M:%S","%Y-%m-%d %H:%M","%Y/%m/%d %H:%M:%S","%Y/%m/%d %H:%M"):
+        try:
+            return datetime.strptime(raw,fmt).replace(tzinfo=timezone.utc)
+        except Exception:
+            pass
+    return None
+
+def actual_article_is_too_old(extracted,max_age_hours=3):
+    if not extracted:
+        return False
+    actual=extracted.get("article_date_dt")
+    if not actual:
+        return False
+    cutoff=datetime.now(timezone.utc)-timedelta(hours=float(max_age_hours))
+    return actual < cutoff
+
 def extract(u):
     try:
         raw = trafilatura.fetch_url(u)
@@ -175,7 +211,14 @@ def extract(u):
         if not x: return None
         d=json.loads(x); body=(d.get('text') or '').strip()
         if not body: return None
-        return {'title':(d.get('title') or '').strip(),'author':(d.get('author') or '').strip(),'body':body}
+        raw_date=(d.get('date') or '').strip()
+        return {
+            'title':(d.get('title') or '').strip(),
+            'author':(d.get('author') or '').strip(),
+            'body':body,
+            'article_date':raw_date,
+            'article_date_dt':parse_extracted_article_date(raw_date),
+        }
     except Exception:
         return None
 
@@ -460,6 +503,9 @@ def main():
 
             # Expensive operations happen only for genuinely new, fresh URLs.
             ex=extract(c['url'])
+            if actual_article_is_too_old(ex,CFG['settings'].get('max_extracted_article_age_hours',3)):
+                print('  Skipped: publisher article date is older than 3 hours')
+                continue
             if not ex or len(ex['body'])<CFG['settings']['minimum_body_characters']:
                 continue
 
@@ -477,6 +523,7 @@ def main():
                 'published_iso':pub.isoformat(),
                 'published_rfc2822':format_datetime(pub),
                 'body':ex['body'],
+                'article_date':ex.get('article_date',''),
                 'matched_keywords':[c['keyword']],
                 'categories':[c['category']],
                 'source_languages':[c['language']] if c['language'] else [],
