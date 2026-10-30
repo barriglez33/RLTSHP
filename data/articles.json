@@ -1,5 +1,47 @@
 [
   {
+    "id": "db8ec85d550f160b1636",
+    "title": "Today's Leo Love Horoscope",
+    "source": "YourTango",
+    "author": "Aria Gmitter",
+    "url": "https://www.yourtango.com/horoscope/love-daily-today/leo",
+    "published_iso": "2026-10-30T05:49:36+00:00",
+    "published_rfc2822": "Fri, 30 Oct 2026 05:49:36 +0000",
+    "body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
+    "article_date": "2026-10-30",
+    "matched_keywords": [
+      "Synastry chart",
+      "Love astrology"
+    ],
+    "categories": [
+      "Horoscopes & Astrology"
+    ],
+    "source_languages": [],
+    "source_countries": [
+      "UK English"
+    ],
+    "discovery_sources": [
+      "Google News"
+    ],
+    "original_title": "Today's Leo Love Horoscope",
+    "original_body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
+    "rss_title": "Today's Leo Love Horoscope",
+    "rss_body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
+    "translation_status": "already_english",
+    "translated_to": "en",
+    "source_detected_language": "en",
+    "translation_last_attempt": "2026-10-30T07:23:38.412258+00:00",
+    "alternate_sources": [
+      {
+        "source": "YourTango",
+        "url": "https://www.yourtango.com/horoscope/love-daily-today/aquarius",
+        "title": "Today's Aquarius Love Horoscope",
+        "body_characters": 464
+      }
+    ],
+    "duplicate_versions_removed": 1
+  },
+  {
     "id": "af08ef8dfbb090ebbaf9",
     "title": "Ghosting y love bombing: Valentina Buzurro advierte que el machismo sigue presente, aunque ahora tenga otros nombres",
     "source": "El Universal",
@@ -29,39 +71,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-10-30T14:27:58.710035+00:00"
-  },
-  {
-    "id": "db8ec85d550f160b1636",
-    "title": "Today's Leo Love Horoscope",
-    "source": "YourTango",
-    "author": "Aria Gmitter",
-    "url": "https://www.yourtango.com/horoscope/love-daily-today/leo",
-    "published_iso": "2026-10-30T05:49:36+00:00",
-    "published_rfc2822": "Fri, 30 Oct 2026 05:49:36 +0000",
-    "body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
-    "article_date": "2026-10-30",
-    "matched_keywords": [
-      "Synastry chart"
-    ],
-    "categories": [
-      "Horoscopes & Astrology"
-    ],
-    "source_languages": [],
-    "source_countries": [
-      "UK English"
-    ],
-    "discovery_sources": [
-      "Google News"
-    ],
-    "original_title": "Today's Leo Love Horoscope",
-    "original_body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
-    "rss_title": "Today's Leo Love Horoscope",
-    "rss_body": "Oct 30, 2026\nSometimes you have to go back to get ahead, Leo. This may feel especially challenging on Friday, as you want to be finished with something. But with Mercury and Venus in retrograde, it's not all that surprising.\nYou likely caused this situation, but you’ve also tried to make amends for it. Yet just because you want it to be done doesn’t mean that choice is yours alone. Hold space for your partner, especially if you want to stay together and be willing to see what happened in a new light.",
-    "translation_status": "already_english",
-    "translated_to": "en",
-    "source_detected_language": "en",
-    "translation_last_attempt": "2026-10-30T07:23:38.412258+00:00"
+    "translation_last_attempt": "2026-10-30T19:44:09.898584+00:00"
   },
   {
     "id": "dfb184e3932e935f7d42",
@@ -5936,7 +5946,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-10-30T14:28:16.228517+00:00"
+    "translation_last_attempt": "2026-10-30T19:44:26.975574+00:00"
   },
   {
     "id": "fabc9d39b5cbd482a2ef",
@@ -7964,7 +7974,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "de",
-    "translation_last_attempt": "2026-10-30T14:28:25.577252+00:00"
+    "translation_last_attempt": "2026-10-30T19:44:36.437110+00:00"
   },
   {
     "id": "ea0d01d8d4066e612ed3",
@@ -8182,7 +8192,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-10-30T14:28:50.791034+00:00"
+    "translation_last_attempt": "2026-10-30T19:45:01.434498+00:00"
   },
   {
     "id": "c59425840d9aa91ca50b",
@@ -8339,7 +8349,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-10-30T14:29:08.404210+00:00"
+    "translation_last_attempt": "2026-10-30T19:45:18.291756+00:00"
   },
   {
     "id": "a300c689d044cf3b25c2",
@@ -8494,7 +8504,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-10-30T14:29:18.472694+00:00"
+    "translation_last_attempt": "2026-10-30T19:45:27.625661+00:00"
   },
   {
     "id": "f7ff273bfbb0b490f257",
@@ -8587,7 +8597,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-10-30T14:29:32.391221+00:00",
+    "translation_last_attempt": "2026-10-30T19:45:40.964858+00:00",
     "alternate_sources": [
       {
         "source": "Journal des Femmes",
@@ -8699,7 +8709,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-10-30T14:29:45.536635+00:00"
+    "translation_last_attempt": "2026-10-30T19:45:54.236984+00:00"
   },
   {
     "id": "0151f2f853f6c3384fc6",
