@@ -1,5 +1,69 @@
 [
   {
+    "id": "a9cdac425d9f1a5984d6",
+    "title": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps | iPhone in Canada",
+    "source": "iPhone in Canada",
+    "author": "Steve Vegvari",
+    "url": "https://www.iphoneincanada.ca/2026/11/03/apple-disclosures-dating-apps/",
+    "published_iso": "2026-11-03T14:12:29+00:00",
+    "published_rfc2822": "Tue, 03 Nov 2026 14:12:29 +0000",
+    "body": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps\nApple is introducing new App Store age-rating requirements that will affect dating apps, AI companions and services that allow users to share their real-world location.\nAccording to a developer announcement published November 2, Apple is adding two new content descriptors to App Store Connect starting on November 16 of this year. The changes are designed to ensure age ratings accurately reflect an app’s features while complying with regional regulations.\nThe first category revolves around Shared Location. This applies to apps that allow users to share their physical location with another person or group. The second is Dating and Relationships, which covers services that facilitate romantic connections.\nInterestingly, Apple’s definition also extends to virtual companions that engage users in romantic or sexual content. That means AI-powered relationship apps will face the same minimum age-rating requirements as traditional dating platforms. Under the updated rules, apps featuring Dating and Relationships functionality must carry a minimum 18+ rating. However, location-sharing features won’t necessarily trigger a higher age rating in every region.\nIn Brazil, apps offering Shared Location must meet additional requirements. These receive an A16 classification, and those featuring Dating and Relationships receive an A18 rating. There are exceptions. Developers offering family-oriented services, such as location-sharing apps designed for parents and children, can request a lower classification through Brazil’s Ministry of Justice and Public Security.\nApple says developers must complete the new disclosures when submitting an app update or modifying their existing App Store age-rating questionnaire. All apps must have the required declarations completed by January 12, 2027, regardless of whether an update is planned.",
+    "article_date": "2026-11-03",
+    "matched_keywords": [
+      "Dating apps"
+    ],
+    "categories": [
+      "Dating & Romance"
+    ],
+    "source_languages": [],
+    "source_countries": [
+      "UK English"
+    ],
+    "discovery_sources": [
+      "Google News"
+    ],
+    "original_title": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps | iPhone in Canada",
+    "original_body": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps\nApple is introducing new App Store age-rating requirements that will affect dating apps, AI companions and services that allow users to share their real-world location.\nAccording to a developer announcement published November 2, Apple is adding two new content descriptors to App Store Connect starting on November 16 of this year. The changes are designed to ensure age ratings accurately reflect an app’s features while complying with regional regulations.\nThe first category revolves around Shared Location. This applies to apps that allow users to share their physical location with another person or group. The second is Dating and Relationships, which covers services that facilitate romantic connections.\nInterestingly, Apple’s definition also extends to virtual companions that engage users in romantic or sexual content. That means AI-powered relationship apps will face the same minimum age-rating requirements as traditional dating platforms. Under the updated rules, apps featuring Dating and Relationships functionality must carry a minimum 18+ rating. However, location-sharing features won’t necessarily trigger a higher age rating in every region.\nIn Brazil, apps offering Shared Location must meet additional requirements. These receive an A16 classification, and those featuring Dating and Relationships receive an A18 rating. There are exceptions. Developers offering family-oriented services, such as location-sharing apps designed for parents and children, can request a lower classification through Brazil’s Ministry of Justice and Public Security.\nApple says developers must complete the new disclosures when submitting an app update or modifying their existing App Store age-rating questionnaire. All apps must have the required declarations completed by January 12, 2027, regardless of whether an update is planned.",
+    "rss_title": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps | iPhone in Canada",
+    "rss_body": "Apple to Require Disclosures of Location Sharing and Dating Features in Apps\nApple is introducing new App Store age-rating requirements that will affect dating apps, AI companions and services that allow users to share their real-world location.\nAccording to a developer announcement published November 2, Apple is adding two new content descriptors to App Store Connect starting on November 16 of this year. The changes are designed to ensure age ratings accurately reflect an app’s features while complying with regional regulations.\nThe first category revolves around Shared Location. This applies to apps that allow users to share their physical location with another person or group. The second is Dating and Relationships, which covers services that facilitate romantic connections.\nInterestingly, Apple’s definition also extends to virtual companions that engage users in romantic or sexual content. That means AI-powered relationship apps will face the same minimum age-rating requirements as traditional dating platforms. Under the updated rules, apps featuring Dating and Relationships functionality must carry a minimum 18+ rating. However, location-sharing features won’t necessarily trigger a higher age rating in every region.\nIn Brazil, apps offering Shared Location must meet additional requirements. These receive an A16 classification, and those featuring Dating and Relationships receive an A18 rating. There are exceptions. Developers offering family-oriented services, such as location-sharing apps designed for parents and children, can request a lower classification through Brazil’s Ministry of Justice and Public Security.\nApple says developers must complete the new disclosures when submitting an app update or modifying their existing App Store age-rating questionnaire. All apps must have the required declarations completed by January 12, 2027, regardless of whether an update is planned.",
+    "translation_status": "already_english",
+    "translated_to": "en",
+    "source_detected_language": "en",
+    "translation_last_attempt": "2026-11-03T15:27:17.122938+00:00"
+  },
+  {
+    "id": "b8658a5a7c20c9d2ee8b",
+    "title": "Apple is restricting dating apps and romanceable chatbots to over 18s",
+    "source": "The Verge",
+    "author": "Jess Weatherbed",
+    "url": "https://www.theverge.com/tech/1025185/apple-app-store-age-rating-dating-apps-ai-companion",
+    "published_iso": "2026-11-03T13:22:38+00:00",
+    "published_rfc2822": "Tue, 03 Nov 2026 13:22:38 +0000",
+    "body": "Apple will soon start asking developers to provide more details about their apps to enforce new App Store age rating requirements for dating and location-sharing features. The upcoming content descriptors announced on Monday will require developers to declare if their apps allow users to share their real-world location with others, or include features that enable dating, relationship, or sexual behaviour between real people or virtual companions.\nApple is restricting dating apps and romanceable chatbots to over 18s\nNew App Store age rating guidance is being introduced for dating apps, romanceable virtual companions, and location sharing.\nApps that include dating and relationships features will receive a minimum age rating of 18, while those with location sharing will see an impact to their minimum age rating in some regions, depending on local regulations. These updates will be included in the App Store Connect age rating questionnaire starting November 16th, and all apps will be required to complete the new declarations by January 12th, 2027.\nApple already has an 18-plus rating category for the App Store, but this has largely applied to apps that feature gambling, violence, references to drugs, alcohol, or tobacco, and nudity or sexual content. Most dating platforms are also adult-only, but Apple extending its ratings is an effort to prevent minors from slipping through the cracks. These expanding restrictions also aim to keep them away from both AI chatbots that support sexual or romantic interactions, and virtual “girlfriend/boyfriend” simulators that could pose mental health risks.",
+    "article_date": "2026-11-03",
+    "matched_keywords": [
+      "Dating apps"
+    ],
+    "categories": [
+      "Dating & Romance"
+    ],
+    "source_languages": [],
+    "source_countries": [
+      "UK English"
+    ],
+    "discovery_sources": [
+      "Google News"
+    ],
+    "original_title": "Apple is restricting dating apps and romanceable chatbots to over 18s",
+    "original_body": "Apple will soon start asking developers to provide more details about their apps to enforce new App Store age rating requirements for dating and location-sharing features. The upcoming content descriptors announced on Monday will require developers to declare if their apps allow users to share their real-world location with others, or include features that enable dating, relationship, or sexual behaviour between real people or virtual companions.\nApple is restricting dating apps and romanceable chatbots to over 18s\nNew App Store age rating guidance is being introduced for dating apps, romanceable virtual companions, and location sharing.\nApps that include dating and relationships features will receive a minimum age rating of 18, while those with location sharing will see an impact to their minimum age rating in some regions, depending on local regulations. These updates will be included in the App Store Connect age rating questionnaire starting November 16th, and all apps will be required to complete the new declarations by January 12th, 2027.\nApple already has an 18-plus rating category for the App Store, but this has largely applied to apps that feature gambling, violence, references to drugs, alcohol, or tobacco, and nudity or sexual content. Most dating platforms are also adult-only, but Apple extending its ratings is an effort to prevent minors from slipping through the cracks. These expanding restrictions also aim to keep them away from both AI chatbots that support sexual or romantic interactions, and virtual “girlfriend/boyfriend” simulators that could pose mental health risks.",
+    "rss_title": "Apple is restricting dating apps and romanceable chatbots to over 18s",
+    "rss_body": "Apple will soon start asking developers to provide more details about their apps to enforce new App Store age rating requirements for dating and location-sharing features. The upcoming content descriptors announced on Monday will require developers to declare if their apps allow users to share their real-world location with others, or include features that enable dating, relationship, or sexual behaviour between real people or virtual companions.\nApple is restricting dating apps and romanceable chatbots to over 18s\nNew App Store age rating guidance is being introduced for dating apps, romanceable virtual companions, and location sharing.\nApps that include dating and relationships features will receive a minimum age rating of 18, while those with location sharing will see an impact to their minimum age rating in some regions, depending on local regulations. These updates will be included in the App Store Connect age rating questionnaire starting November 16th, and all apps will be required to complete the new declarations by January 12th, 2027.\nApple already has an 18-plus rating category for the App Store, but this has largely applied to apps that feature gambling, violence, references to drugs, alcohol, or tobacco, and nudity or sexual content. Most dating platforms are also adult-only, but Apple extending its ratings is an effort to prevent minors from slipping through the cracks. These expanding restrictions also aim to keep them away from both AI chatbots that support sexual or romantic interactions, and virtual “girlfriend/boyfriend” simulators that could pose mental health risks.",
+    "translation_status": "already_english",
+    "translated_to": "en",
+    "source_detected_language": "en",
+    "translation_last_attempt": "2026-11-03T15:27:17.127233+00:00"
+  },
+  {
     "id": "462352f865d35cf46070",
     "title": "Hila and Ethan Klein to get divorced 14 years after marriage amidst cheating allegations",
     "source": "IndulgExpress",
@@ -221,7 +285,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-11-03T14:16:00.824294+00:00"
+    "translation_last_attempt": "2026-11-03T15:27:29.765921+00:00"
   },
   {
     "id": "db8ec85d550f160b1636",
@@ -6138,7 +6202,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-11-03T14:16:17.971730+00:00"
+    "translation_last_attempt": "2026-11-03T15:27:46.312753+00:00"
   },
   {
     "id": "fabc9d39b5cbd482a2ef",
@@ -8166,7 +8230,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "de",
-    "translation_last_attempt": "2026-11-03T14:16:28.176632+00:00"
+    "translation_last_attempt": "2026-11-03T15:27:55.182011+00:00"
   },
   {
     "id": "ea0d01d8d4066e612ed3",
@@ -8384,7 +8448,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-03T14:16:53.315432+00:00"
+    "translation_last_attempt": "2026-11-03T15:28:19.636439+00:00"
   },
   {
     "id": "c59425840d9aa91ca50b",
@@ -8541,7 +8605,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-03T14:17:10.701298+00:00"
+    "translation_last_attempt": "2026-11-03T15:28:36.036322+00:00"
   },
   {
     "id": "a300c689d044cf3b25c2",
@@ -8696,7 +8760,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-03T14:17:20.229281+00:00"
+    "translation_last_attempt": "2026-11-03T15:28:44.853670+00:00"
   },
   {
     "id": "f7ff273bfbb0b490f257",
@@ -8789,7 +8853,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-11-03T14:17:33.742716+00:00",
+    "translation_last_attempt": "2026-11-03T15:28:57.604109+00:00",
     "alternate_sources": [
       {
         "source": "Journal des Femmes",
@@ -8901,7 +8965,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-11-03T14:17:47.098479+00:00"
+    "translation_last_attempt": "2026-11-03T15:29:10.365977+00:00"
   },
   {
     "id": "0151f2f853f6c3384fc6",
