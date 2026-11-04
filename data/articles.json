@@ -349,7 +349,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-11-04T08:16:26.959173+00:00"
+    "translation_last_attempt": "2026-11-04T16:34:55.143859+00:00"
   },
   {
     "id": "db8ec85d550f160b1636",
@@ -6266,7 +6266,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "es",
-    "translation_last_attempt": "2026-11-04T08:16:43.459927+00:00"
+    "translation_last_attempt": "2026-11-04T16:35:12.185835+00:00"
   },
   {
     "id": "fabc9d39b5cbd482a2ef",
@@ -8294,7 +8294,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "de",
-    "translation_last_attempt": "2026-11-04T08:16:52.554214+00:00"
+    "translation_last_attempt": "2026-11-04T16:35:21.849872+00:00"
   },
   {
     "id": "ea0d01d8d4066e612ed3",
@@ -8512,7 +8512,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-04T08:17:16.309258+00:00"
+    "translation_last_attempt": "2026-11-04T16:35:45.912527+00:00"
   },
   {
     "id": "c59425840d9aa91ca50b",
@@ -8669,7 +8669,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-04T08:17:32.798490+00:00"
+    "translation_last_attempt": "2026-11-04T16:36:02.675869+00:00"
   },
   {
     "id": "a300c689d044cf3b25c2",
@@ -8824,7 +8824,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "it",
-    "translation_last_attempt": "2026-11-04T08:17:41.330041+00:00"
+    "translation_last_attempt": "2026-11-04T16:36:12.008512+00:00"
   },
   {
     "id": "f7ff273bfbb0b490f257",
@@ -8917,7 +8917,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-11-04T08:17:54.066559+00:00",
+    "translation_last_attempt": "2026-11-04T16:36:25.082923+00:00",
     "alternate_sources": [
       {
         "source": "Journal des Femmes",
@@ -9029,7 +9029,7 @@
     "translation_status": "partial_or_fallback",
     "translated_to": "en",
     "source_detected_language": "fr",
-    "translation_last_attempt": "2026-11-04T08:18:07.008129+00:00"
+    "translation_last_attempt": "2026-11-04T16:36:38.534657+00:00"
   },
   {
     "id": "0151f2f853f6c3384fc6",
